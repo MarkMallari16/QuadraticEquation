@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+@font-face {
+    font-family: headerFont;
+    src: url(Box-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent: #27374D;
+    --background: #DDE6ED;
+    --text-color: #fff
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+.quadratic-equation-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: url(bg.svg) no-repeat;
+    background-size: cover;
+}
+
+.hide-container {
+    display: none;
+}
+
+.error-text {
+    color: #dc2626;
+}
+
+.header {
+    font-size: clamp(3rem, 0.875rem + 2vw, 4rem);
+    font-family: headerFont;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sample-text {
+    text-align: center;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.content,
+.result-container {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.solutions {
+    text-align: center;
+}
+
+.quadratic-formula {
+    text-align: center;
+}
+
+.fields {
+    margin-top: 20px;
+
+}
+
+.field {
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 10px 12px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 10px 18px;
+    border: 1px solid var(--accent);
+    background-color: var(--accent);
+    border-radius: 2px;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.result-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.spinner-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border: 6.7px solid #27374d;
+    animation: spinner-kk2y8v 3s infinite;
+}
+
+@keyframes spinner-kk2y8v {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    15% {
+        transform: rotate(-90deg);
+    }
+
+    20%,
+    25% {
+        transform: rotate(-180deg);
+    }
+
+    30%,
+    35% {
+        transform: rotate(-270deg);
+    }
+
+    40%,
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 20px;
+    }
+}

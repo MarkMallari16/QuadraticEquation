@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="calculator.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+    <section class="quadratic-equation-container hide-container" id="main">
+        <div class="container">
+            <div class="header">
+                <h1>Quadratic Equation Calculator</h1>
+               
+            </div>
+            <div class="content">
+               
+                <div class="fields">
+                    <div class="sample-text">
+                        <span id="quadratic-equation"></span> = 0
+                    </div>
+                    <div class="field">
+                        <label for="field-1">Enter coefficient 'a': </label>
+                        <input type="text" id="field-1">
+                    </div>
+                    <div class="field">
+                        <label for="field-2">Enter coefficient 'b': </label>
+                        <input type="text" id="field-2">
+                    </div>
+                    <div class="field">
+                        <label for="field-3">Enter coefficient 'c': </label>
+                        <input type="text" id="field-3">
+                    </div>
+                    <div class="button-container">
+                        <button class="button" onclick="calculate()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-container">
+                <h2>Answer: </h2>
+                <span class="formula"></span>
+                <span class="formula-result"></span>
+
+                <p class="result"></p>
+            </div>
+
+
+        </div>
+
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
